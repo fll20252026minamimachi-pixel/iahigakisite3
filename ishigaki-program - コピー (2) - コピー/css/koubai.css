@@ -1,0 +1,15 @@
+.hidden {
+  display: none;
+}
+.preview {
+  text-align: center;
+}
+
+
+.kobai li ul{
+  list-style-type: none;
+  display: inline-block;
+}
+.kaku{
+  display: none;
+}

@@ -1,0 +1,21 @@
+.hidden {
+  display: none;
+}
+.botan ul li{
+  list-style-type: none;
+  display: inline;
+}
+
+.kaku{
+  display: none;
+}
+
+#shakudo.active {
+      background: #6a93ec;
+      color: white;
+    }
+  
+#hakaru.active {
+    background: #6a93ec;
+    color: white;
+  }
