@@ -176,11 +176,12 @@ const risetto = document.getElementById('risetto');
 risetto.addEventListener('click',(e)=>{
   tensha.length = 0;
   tenna.length  = 0;
-  scalePxPerUnit = null;
+  distance = null;
   wariai.textContent = '尺度：';
   tyanto.textContent = '結果：';
   
   drawAll();
 });
+
 
 
