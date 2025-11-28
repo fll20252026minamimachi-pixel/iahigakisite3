@@ -113,7 +113,8 @@ function koubai (p1,p2){
     return { slope: Infinity, angleDeg: 90, percent: Infinity, dx, dyCanvas };
   }
   const slope = -(dyCanvas / dx);   // 数学の傾き（上が＋）
-  const angleDeg = Math.atan2(-dyCanvas, dx) * 180 / Math.PI; // 右向きを0°，反時計回り+
+  const kyuujuu = (Math.floor(Math.atan2(-dyCanvas, dx) * 180 / Math.PI / 90));
+  const angleDeg = Math.atan2(-dyCanvas, dx) * 180 / Math.PI -90 * Number(kyuujuu); // 右向きを0°，反時計回り+
   const percent = slope * 100;
   return { slope, angleDeg, percent, dx, dyCanvas };
 }
@@ -171,5 +172,6 @@ risetto.addEventListener('click',(e)=>{
   shou.textContent   = '最小角度：—';
   sa.textContent     = '差：—';
   drawall();
+
 
 })
