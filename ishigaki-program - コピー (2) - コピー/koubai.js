@@ -113,10 +113,19 @@ function koubai (p1,p2){
     return { slope: Infinity, angleDeg: 90, percent: Infinity, dx, dyCanvas };
   }
   const slope = -(dyCanvas / dx);   // 数学の傾き（上が＋）
-  const kyuujuu = (Math.floor(Math.atan2(-dyCanvas, dx) * 180 / Math.PI / 90));
-  const angleDeg = Math.atan2(-dyCanvas, dx) * 180 / Math.PI -90 * Number(kyuujuu); // 右向きを0°，反時計回り+
+  const kakudo = Math.atan2(-dyCanvas, dx) * 180/ Math.PI; // 右向きを0°，反時計回り+
+  let zettaiti = Math.abs(kakudo);
+  if (zettaiti > 90){
+    const usokakudo = Math.abs(Math.atan2(-dyCanvas, dx) * 180/ Math.PI);
+    const angleDeg = 180 - usokakudo;
+    const percent = slope * 100;
+    return { slope, angleDeg, percent, dx, dyCanvas };
+  
+  }else {
+    const angleDeg = Math.abs(kakudo);
   const percent = slope * 100;
   return { slope, angleDeg, percent, dx, dyCanvas };
+  }
 }
 
 let katamuki =[];
@@ -175,3 +184,4 @@ risetto.addEventListener('click',(e)=>{
 
 
 })
+
