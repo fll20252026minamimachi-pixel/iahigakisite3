@@ -3,7 +3,11 @@
 }
 .botan ul li{
   list-style-type: none;
-  display: inline;
+  display: inline-block;
+  margin-right: 15px;
+}
+.botan ul li.kakko {
+  margin-right: 1px;
 }
 
 .kaku{
@@ -100,4 +104,5 @@ body {
 p {
     margin: 10px 0 20px;
 }
+
 
