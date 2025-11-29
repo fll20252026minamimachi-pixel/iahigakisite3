@@ -18,8 +18,8 @@
 #hakaru.active {
     background: #6a93ec;
     color: white;
-
   }
+
 h1 {
   color: rgb(207, 207, 207);
   background-color: rgb(38, 38, 38);
@@ -28,7 +28,7 @@ h1 {
 }
 h2 {
     margin: 30px 0 45px;
-  font-size: 26.5px;
+    font-size: 26.5px;
 }
 
 .kobai li ul{
@@ -100,4 +100,3 @@ body {
 p {
     margin: 10px 0;
 }
-
