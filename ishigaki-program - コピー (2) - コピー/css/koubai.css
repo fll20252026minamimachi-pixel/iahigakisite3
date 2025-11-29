@@ -89,26 +89,30 @@ p {
 }
 
 
-
-
-
 @media (max-width: 600px) {
   body {
-    font-size: 25px;
+    font-size: 16px;          /* 文字サイズは標準くらい */
+    padding: 0 8px;           /* 画面端に少しだけ余白 */
   }
 
   h1 {
-    font-size: 2.0rem;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 1.5rem;
+  .nav ul {
+    padding: 10px 0;
   }
 
-  p {
-    line-height: 1.6;
+  .nav ul li {
+    display: block;           /* 横並び → 縦に並べる */
+    margin: 4px 0;
+  }
+
+  .nav ul li a {
+    display: block;           /* クリックしやすいように幅いっぱい */
+    padding: 10px 0;
   }
 }
-
-
 
