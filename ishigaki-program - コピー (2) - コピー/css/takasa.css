@@ -143,6 +143,11 @@ li button{
   width: 200px;
   height: 26px;
 }
+.setsumei {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white; /* 初期は白(背景なし) */
+}
 @media (max-width: 600px) {
   body {
     font-size: 16px;          /* 文字サイズは標準くらい */
@@ -175,6 +180,7 @@ li button{
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
