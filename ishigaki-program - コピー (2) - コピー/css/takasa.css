@@ -109,6 +109,40 @@ p {
 .e{
   text-align: center;
 }
+#takasa-shasin{
+  padding-right: 300px;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+}
+
+li button{
+  font-size: 16px;
+  width: 120px;
+  height: 32px;
+  margin: 6px 3px;
+}
+
+#tukaikata-takasa{
+   font-size: 16px;
+  width: 75px;
+  height: 28px;
+}
+#kettei{
+   font-size: 16px;
+  width: 90px;
+  height: 36px;
+}
+#keisoku{
+  font-size: 16px;
+  width: 200px;
+  height: 36px;
+}
+#jissai{
+  font-size: 16px;
+  width: 200px;
+  height: 26px;
+}
 @media (max-width: 600px) {
   body {
     font-size: 16px;          /* 文字サイズは標準くらい */
@@ -141,6 +175,7 @@ p {
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
