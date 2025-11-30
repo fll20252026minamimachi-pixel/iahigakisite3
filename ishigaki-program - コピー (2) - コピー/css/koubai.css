@@ -102,6 +102,7 @@ ul button{
   height: 32px;
 }
 .tukaikata{
+  margin-bottom: 5px;
   font-size: 16px;
   width: 75px;
   height: 30px;
@@ -148,6 +149,7 @@ ul button{
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
