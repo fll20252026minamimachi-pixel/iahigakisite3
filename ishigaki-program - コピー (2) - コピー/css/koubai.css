@@ -90,6 +90,22 @@ p {
 .e{
   text-align: center;
 }
+input{
+  padding-right: 300px;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+}
+ul button{
+  font-size: 16px;
+  width: 120px;
+  height: 32px;
+}
+.tukaikata{
+  font-size: 16px;
+  width: 75px;
+  height: 30px;
+}
 
 
 @media (max-width: 600px) {
@@ -124,6 +140,7 @@ p {
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
