@@ -106,6 +106,9 @@ p {
     margin: 10px 0 20px;
 }
 
+.e{
+  text-align: center;
+}
 @media (max-width: 600px) {
   body {
     font-size: 16px;          /* 文字サイズは標準くらい */
@@ -138,6 +141,7 @@ p {
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
