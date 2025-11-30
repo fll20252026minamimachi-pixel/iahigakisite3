@@ -69,7 +69,11 @@ hakaru.addEventListener('click',(e)=>{
 canvas.addEventListener('click', (e) => {
   if (!gazou || !fitt) return; // 画像未読み込みなら何もしない
   const { x, y } = zahyou(e,canvas);
-
+  const insideX = (x >= fitt.x) && (x <= fitt.x + fitt.w);
+  const insideY = (y >= fitt.y) && (y <= fitt.y + fitt.h);
+  if (!insideX || !insideY) {
+    return; // ← 画像の外は無視
+  }
   if (mode === 'shakudo') {
     tensha.push({ x, y });
     if (tensha.length > 2) tensha.shift(); // 最新2点だけ残す
@@ -182,6 +186,7 @@ risetto.addEventListener('click',(e)=>{
   
   drawAll();
 });
+
 
 
 
