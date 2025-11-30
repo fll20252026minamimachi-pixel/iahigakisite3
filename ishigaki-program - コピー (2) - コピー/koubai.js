@@ -48,6 +48,11 @@ const ten = [];
 
 canvas.addEventListener('click',(e)=>{
     const { x, y } = zahyou(e, canvas);
+  const insideX = (x >= fitt.x) && (x <= fitt.x + fitt.w);
+  const insideY = (y >= fitt.y) && (y <= fitt.y + fitt.h);
+  if (!insideX || !insideY) {
+    return; // ← 画像の外は無視
+  }
     ten.push({ x, y });
     drawall();
 });
@@ -184,4 +189,5 @@ risetto.addEventListener('click',(e)=>{
 
 
 })
+
 
