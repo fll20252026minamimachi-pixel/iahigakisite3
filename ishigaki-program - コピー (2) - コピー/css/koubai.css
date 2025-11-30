@@ -114,5 +114,12 @@ p {
     display: block;           /* クリックしやすいように幅いっぱい */
     padding: 10px 0;
   }
+  canvas#preview {
+  display: block;
+  max-width: 100%;  /* 画面からはみ出さないように */
+  height: auto;     /* 縦横比を保ったまま縮める */
+  margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
+}
+
 
