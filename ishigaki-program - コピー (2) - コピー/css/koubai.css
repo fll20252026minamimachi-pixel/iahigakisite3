@@ -111,6 +111,9 @@ ul button{
   padding-bottom: 10px;
   background-color: white; /* 初期は白(背景なし) */
 }
+.kobai li ul{
+  margin: 0 0;
+}
 
 
 @media (max-width: 600px) {
@@ -145,6 +148,7 @@ ul button{
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
