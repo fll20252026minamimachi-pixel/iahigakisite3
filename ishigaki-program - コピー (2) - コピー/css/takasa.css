@@ -104,6 +104,7 @@ body {
 }
 p {
     margin: 10px 0 20px;
+  font-size: 18px;
 }
 
 .e{
@@ -180,6 +181,7 @@ li button{
   margin: 0 auto 20px;  /* 中央に配置＋下に少し余白 */
 }
 }
+
 
 
 
