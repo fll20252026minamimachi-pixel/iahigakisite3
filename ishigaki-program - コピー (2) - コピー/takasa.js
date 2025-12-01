@@ -74,6 +74,7 @@ canvas.addEventListener('click', (e) => {
   if (!insideX || !insideY) {
     return; // ← 画像の外は無視
   }
+
   if (mode === 'shakudo') {
     tensha.push({ x, y });
     if (tensha.length > 2) tensha.shift(); // 最新2点だけ残す
@@ -119,7 +120,7 @@ function drawAll() {
   ctx.fillStyle = '#22c55e';
   for (const p of tensha) {
     ctx.beginPath();
-    ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+    ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
     ctx.fill();
   }
   if (tensha.length >= 2) {
@@ -137,7 +138,7 @@ function drawAll() {
   ctx.fillStyle = '#c56622';
   for (const p of tenna) {
     ctx.beginPath();
-    ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+    ctx.arc(p.x, p.y, 2.5, 0, Math.PI * 2);
     ctx.fill();
   }
   if (tenna.length >= 2) {
@@ -162,8 +163,11 @@ sousin.addEventListener('click',(e) => {
     wariai.textContent = '尺度：まず「尺度合わせ」で2点を選んでください';
     return;
   }
+  // px(canvas内)/cm
   distance = kyori(tensha[0], tensha[1]) / Number(suuzi.value);
- wariai.textContent = "尺度：" + distance.toFixed(4);
+  wariai.innerHTML = '基準測定：<span class="green";">完了！</span>';
+
+  
 });
 
 function kyori(p1, p2) {
@@ -172,6 +176,7 @@ function kyori(p1, p2) {
 
 const keisoku = document.getElementById('keisoku');
 keisoku.addEventListener('click',(e)=>{
+ // px(canvas内)/cm
   const far = kyori(tenna[0],tenna[1])/distance;
  tyanto.textContent = "結果：" + far.toFixed(4) + "cm";
 })
@@ -181,12 +186,8 @@ risetto.addEventListener('click',(e)=>{
   tensha.length = 0;
   tenna.length  = 0;
   distance = null;
-  wariai.textContent = '尺度：';
+  wariai.innerHTML = '基準測定：<span class="blue";">未設定</span>';
   tyanto.textContent = '結果：';
   
   drawAll();
 });
-
-
-
-
