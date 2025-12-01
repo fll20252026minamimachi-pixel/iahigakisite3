@@ -160,7 +160,7 @@ let distance = null;
 
 sousin.addEventListener('click',(e) => {
   if (tensha.length < 2) {
-    wariai.textContent = '尺度：まず「尺度合わせ」で2点を選んでください';
+     wariai.innerHTML = '基準測定：<span class="blue";">まず「基準測定」で2点を選んでください</span>';
     return;
   }
   // px(canvas内)/cm
@@ -191,3 +191,4 @@ risetto.addEventListener('click',(e)=>{
   
   drawAll();
 });
+
