@@ -28,7 +28,7 @@
 
             <!-- クリックで表示させるテキストにはhiddenクラスを付ける -->
             <p id="tukaikata-takasa-text" class="hidden">①「ファイルを選択」ボタンから写真を選択<br>
-②「基準測定」を押す<br>
+②「基準設定」を押す<br>
 ③基準にしたい二点を選ぶ<br>
 ④長さをボックス部分に入力し、「設定」を押す<br>
 ⑤「長さ計測」を押し、計測したい二点を押す<br>
@@ -37,14 +37,14 @@
         <nav class="botan">
         <ul>
         <li><input type="file" accept="image/*" id="takasa-shasin"></li><br>
-        <li><button id="shakudo">基準測定</button></li>
+        <li><button id="shakudo">基準設定</button></li>
         <li><button id="hakaru">長さ計測</button></li>
         
-        <li class="kakko"><input type="number" id="jissai" placeholder="実長(基準測定)(cm)"> </li>
+        <li class="kakko"><input type="number" id="jissai" placeholder="実長(基準設定)(cm)"> </li>
         <li><input type="submit" id="kettei"　value="設定"></li>
     　　<li><button id ="risetto" >リセット</button></li><br>
         <li><button id = "keisoku">長さを出す(長さ計測)</button></li><br>
-        <li><div id = "wariai" class="dekap">基準測定 : <span class="blue">未設定</span></div></li><br>
+        <li><div id = "wariai" class="dekap">基準設定 : <span class="blue">未設定</span></div></li><br>
         <li><div id ="tyanto" >結果：</div></li>
         
 
@@ -58,6 +58,7 @@
 
 
 </html>
+
 
 
 
