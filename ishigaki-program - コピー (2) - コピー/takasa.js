@@ -160,12 +160,12 @@ let distance = null;
 
 sousin.addEventListener('click',(e) => {
   if (tensha.length < 2) {
-     wariai.innerHTML = '基準測定：<span class="blue";">まず「基準測定」で2点を選んでください</span>';
+     wariai.innerHTML = '基準設定：<span class="blue";">まず「基準設定」で2点を選んでください</span>';
     return;
   }
   // px(canvas内)/cm
   distance = kyori(tensha[0], tensha[1]) / Number(suuzi.value);
-  wariai.innerHTML = '基準測定：<span class="green";">完了！</span>';
+  wariai.innerHTML = '基準設定：<span class="green";">完了！</span>';
 
   
 });
@@ -186,9 +186,10 @@ risetto.addEventListener('click',(e)=>{
   tensha.length = 0;
   tenna.length  = 0;
   distance = null;
-  wariai.innerHTML = '基準測定：<span class="blue";">未設定</span>';
+  wariai.innerHTML = '基準設定：<span class="blue";">未設定</span>';
   tyanto.textContent = '結果：';
   
   drawAll();
 });
+
 
